@@ -10,18 +10,27 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        if let statusButton = statusItem.button {
+            statusButton.target = self
+            statusButton.action = #selector(statusItemClicked(_:))
+        }
+        
+        updateMicStatus()
+    }
 
   @IBOutlet weak var window: NSWindow!
 
+    private func updateMicStatus() {
+        guard let button = statusItem.button else { return }
+        button.image = NSImage(named: NSImage.Name(Audio.micMuted ? "micOff" : "micOn"))
+    }
+    
+    @objc func statusItemClicked(_ sender: Any?) {
+        Audio.toggleMicMute()
+        updateMicStatus()
+    }
 
-  func applicationDidFinishLaunching(_ aNotification: Notification) {
-    // Insert code here to initialize your application
-  }
-
-  func applicationWillTerminate(_ aNotification: Notification) {
-    // Insert code here to tear down your application
-  }
-
-
+    private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 }
 
