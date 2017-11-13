@@ -16,7 +16,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusButton.action = #selector(statusItemClicked(_:))
         }
         
-        updateMicStatus()
+        muteListenerId = Audio.addMicMuteListener { [weak self] in
+            self?.updateMicStatus()
+        }
+    }
+
+    func applicationWillTerminate(_ aNotification: Notification) {
+        Audio.removeMicMuteListener(listenerId: muteListenerId)
     }
 
   @IBOutlet weak var window: NSWindow!
@@ -32,5 +38,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    private var muteListenerId: Int = -1
 }
-
