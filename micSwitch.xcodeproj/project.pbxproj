@@ -10,6 +10,7 @@
 		7CC187EB1FB9A63D0015D41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */; };
 		7CC187ED1FB9A63D0015D41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EC1FB9A63D0015D41D /* Assets.xcassets */; };
 		7CC187F01FB9A63D0015D41D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EE1FB9A63D0015D41D /* MainMenu.xib */; };
+		7CC187F91FB9B7230015D41D /* AudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC187F81FB9B7230015D41D /* AudioUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		7CC187EF1FB9A63D0015D41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7CC187F11FB9A63D0015D41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC187F21FB9A63D0015D41D /* micSwitch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = micSwitch.entitlements; sourceTree = "<group>"; };
+		7CC187F81FB9B7230015D41D /* AudioUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				7CC187EE1FB9A63D0015D41D /* MainMenu.xib */,
 				7CC187F11FB9A63D0015D41D /* Info.plist */,
 				7CC187F21FB9A63D0015D41D /* micSwitch.entitlements */,
+				7CC187F81FB9B7230015D41D /* AudioUtils.swift */,
 			);
 			path = micSwitch;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CC187EB1FB9A63D0015D41D /* AppDelegate.swift in Sources */,
+				7CC187F91FB9B7230015D41D /* AudioUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
