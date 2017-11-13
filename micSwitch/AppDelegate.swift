@@ -3,7 +3,7 @@
 //  micSwitch
 //
 //  Created by dstd on 13/11/2017.
-//  Copyright © 2017 denis-st. All rights reserved.
+//  Copyright © 2017 Denis Stanishevskiy. All rights reserved.
 //
 
 import Cocoa
