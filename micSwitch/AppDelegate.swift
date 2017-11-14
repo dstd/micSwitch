@@ -10,10 +10,15 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    @IBOutlet weak var window: NSWindow!
+    @IBOutlet weak var statusMenu: NSMenu!
+    @IBOutlet weak var mutedStateItem: NSMenuItem!
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if let statusButton = statusItem.button {
             statusButton.target = self
             statusButton.action = #selector(statusItemClicked(_:))
+            statusButton.sendAction(on: [NSEvent.EventTypeMask.leftMouseUp, NSEvent.EventTypeMask.rightMouseUp])
         }
         
         muteListenerId = Audio.addMicMuteListener { [weak self] in
@@ -25,7 +30,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         Audio.removeMicMuteListener(listenerId: muteListenerId)
     }
 
-  @IBOutlet weak var window: NSWindow!
+    @IBAction func showPreferences(_ sender: Any) {
+        window.makeKeyAndOrderFront(self)
+        NSApp.activate(ignoringOtherApps: true)
+    }
 
     private func updateMicStatus() {
         guard let button = statusItem.button else { return }
@@ -33,10 +41,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func statusItemClicked(_ sender: Any?) {
-        Audio.toggleMicMute()
-        updateMicStatus()
+        guard let event = NSApp.currentEvent else { return }
+        switch event.type {
+        case NSEvent.EventType.rightMouseUp:
+            mutedStateItem.title = Audio.micMuted
+                ? NSLocalizedString("Mic is Muted", comment: "State in status menu item")
+                : NSLocalizedString("Mic is Active", comment: "State in status menu item")
+            statusItem.popUpMenu(statusMenu)
+        default:
+            Audio.toggleMicMute()
+        }
     }
-
+    
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private var muteListenerId: Int = -1
 }
