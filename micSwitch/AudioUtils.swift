@@ -74,11 +74,9 @@ struct Audio {
             listener()
         }
         
-        os_unfair_lock_lock(&lock)
         let listenerId = nextListenerId
         nextListenerId += 1
         listeners[listenerId] = block
-        os_unfair_lock_unlock(&lock)
         
         AudioObjectAddPropertyListenerBlock(inputDevice, &AudioObjectAddress.muteState, DispatchQueue.main, block)
         
@@ -88,9 +86,6 @@ struct Audio {
     }
     
     static func removeMicMuteListener(listenerId: Int) {
-        os_unfair_lock_lock(&lock)
-        defer { os_unfair_lock_unlock(&lock) }
-        
         guard let inputDevice = inputDevice,
             let block = listeners.removeValue(forKey: listenerId)
             else { return }
@@ -98,7 +93,6 @@ struct Audio {
         AudioObjectRemovePropertyListenerBlock(inputDevice, &AudioObjectAddress.muteState, DispatchQueue.main, block)
     }
     
-    private static var lock = os_unfair_lock.init()
     private static var listeners = [Int: AudioObjectPropertyListenerBlock]()
     private static var nextListenerId: Int = 0
 }
