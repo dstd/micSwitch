@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0998F1E8923C40945F1B849C /* libPods-micSwitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95EEC8846D47357E0C76A671 /* libPods-micSwitch.a */; };
 		7CC187EB1FB9A63D0015D41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */; };
 		7CC187ED1FB9A63D0015D41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EC1FB9A63D0015D41D /* Assets.xcassets */; };
 		7CC187F01FB9A63D0015D41D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EE1FB9A63D0015D41D /* MainMenu.xib */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18F2C411820865C3AAD30DAE /* Pods-micSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-micSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch.release.xcconfig"; sourceTree = "<group>"; };
 		7CC187E71FB9A63D0015D41D /* micSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = micSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC187EC1FB9A63D0015D41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -21,6 +23,8 @@
 		7CC187F11FB9A63D0015D41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC187F21FB9A63D0015D41D /* micSwitch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = micSwitch.entitlements; sourceTree = "<group>"; };
 		7CC187F81FB9B7230015D41D /* AudioUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtils.swift; sourceTree = "<group>"; };
+		95EEC8846D47357E0C76A671 /* libPods-micSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-micSwitch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02C8B4A3456F2904B757385 /* Pods-micSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-micSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0998F1E8923C40945F1B849C /* libPods-micSwitch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		493B02A16B208425F81C1AA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A02C8B4A3456F2904B757385 /* Pods-micSwitch.debug.xcconfig */,
+				18F2C411820865C3AAD30DAE /* Pods-micSwitch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7CC187DE1FB9A63D0015D41D = {
 			isa = PBXGroup;
 			children = (
 				7CC187E91FB9A63D0015D41D /* micSwitch */,
 				7CC187E81FB9A63D0015D41D /* Products */,
+				493B02A16B208425F81C1AA5 /* Pods */,
+				CC7DF16E3BF4F2D7794D84F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +79,14 @@
 			path = micSwitch;
 			sourceTree = "<group>";
 		};
+		CC7DF16E3BF4F2D7794D84F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95EEC8846D47357E0C76A671 /* libPods-micSwitch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +94,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CC187F51FB9A63D0015D41D /* Build configuration list for PBXNativeTarget "micSwitch" */;
 			buildPhases = (
+				6D8EF30BFBF9AA6F41BF5C2E /* [CP] Check Pods Manifest.lock */,
 				7CC187E31FB9A63D0015D41D /* Sources */,
 				7CC187E41FB9A63D0015D41D /* Frameworks */,
 				7CC187E51FB9A63D0015D41D /* Resources */,
+				034464F150C5D7BD83B63A4C /* [CP] Embed Pods Frameworks */,
+				BD79004F3C22C28F8F90F0B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +155,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		034464F150C5D7BD83B63A4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D8EF30BFBF9AA6F41BF5C2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD79004F3C22C28F8F90F0B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CC187E31FB9A63D0015D41D /* Sources */ = {
@@ -261,11 +336,13 @@
 		};
 		7CC187F61FB9A63D0015D41D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02C8B4A3456F2904B757385 /* Pods-micSwitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = micSwitch/micSwitch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G84U56F244;
 				INFOPLIST_FILE = micSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -277,11 +354,13 @@
 		};
 		7CC187F71FB9A63D0015D41D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F2C411820865C3AAD30DAE /* Pods-micSwitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = micSwitch/micSwitch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G84U56F244;
 				INFOPLIST_FILE = micSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
