@@ -13,6 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var mutedStateItem: NSMenuItem!
     
+    var preferences: PreferencesViewController?
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if let statusButton = statusItem.button {
             statusButton.target = self
@@ -34,7 +36,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func showPreferences(_ sender: Any) {
-        let preferences = PreferencesViewController.newInstance()
+        let preferences = self.preferences ?? PreferencesViewController.newInstance()
+        self.preferences = preferences
         
         let popOver = NSPopover()
         popOver.appearance = NSAppearance(named: .aqua)
