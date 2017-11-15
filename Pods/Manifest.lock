@@ -2,11 +2,15 @@ PODS:
   - MASShortcut (2.3.6)
 
 DEPENDENCIES:
-  - MASShortcut
+  - MASShortcut (from `./Private Pods/MASShortcut`)
+
+EXTERNAL SOURCES:
+  MASShortcut:
+    :path: "./Private Pods/MASShortcut"
 
 SPEC CHECKSUMS:
   MASShortcut: 9c215e8a8a78f3d01ce56da48e2730ab66b538fa
 
-PODFILE CHECKSUM: 84e806386f21d9b5bc98093bc903832d1e23eb5b
+PODFILE CHECKSUM: f4fe463787fa1c457e045a776beef0cd08a30df8
 
 COCOAPODS: 1.2.1

@@ -1,1 +1,1 @@
-../../../MASShortcut/Framework/MASShortcutValidator.h
+../../../../Private Pods/MASShortcut/Framework/MASShortcutValidator.h

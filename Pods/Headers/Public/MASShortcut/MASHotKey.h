@@ -1,1 +1,1 @@
-../../../MASShortcut/Framework/MASHotKey.h
+../../../../Private Pods/MASShortcut/Framework/MASHotKey.h

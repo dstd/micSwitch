@@ -1,1 +1,1 @@
-../../../MASShortcut/Framework/MASDictionaryTransformer.h
+../../../../Private Pods/MASShortcut/Framework/MASDictionaryTransformer.h

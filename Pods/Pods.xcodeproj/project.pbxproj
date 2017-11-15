@@ -3,50 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E3FE226CE18F169D10196723C37D1D6 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 038D200C5F73B8EFF0A93DF4E6E1BD90 /* fr.lproj */; };
-		0E9F71B13EB5B5185C1368803180F2BA /* MASShortcut-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2035E0B6B08D4683931B31919D5194 /* MASShortcut-dummy.m */; };
-		1BFB0520F10AC37A104DF56489C393AD /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8C406EEFC562A5DDF90E7181CB08331B /* cs.lproj */; };
-		2BEA82707F6B1289F28D8C8097CF4121 /* MASShortcut.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA5D3E1505005EA05EF0615090F48F8 /* MASShortcut.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		148CEA208205FE894E79A8110FCEE3EA /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 786E4429248DB2ED934505D4C021350E /* cs.lproj */; };
+		16F26C476213F3ACE8B3C94917FF936B /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 76077CCE2252D7E4ADF97C06B5B59FC1 /* de.lproj */; };
+		28278850E653594700A0DBDA16C4920D /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D508BE53DE8B37BF919CF333A6779DB2 /* ru.lproj */; };
+		29D3CD326F3D66C7EB34D6CD705D5358 /* MASShortcutMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2A1AF039A4314FA8923ADA0097AEA /* MASShortcutMonitor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2CDF853D3300CDEDAEB2E2B02A353FB2 /* Pods-micSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4656E1D6B68FABE7D430B5181005CB1 /* Pods-micSwitch-dummy.m */; };
-		2DBA7EDB796E0AF9A189672E9CBA1407 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 262F9C963F67BB43B77AEBFCCACE7C2E /* zh-Hans.lproj */; };
-		33691F55769BFDF534CD2343841B2B48 /* MASShortcutBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 36695E6AC45B850D887F4F00D8CE1EE9 /* MASShortcutBinder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		34A3BE024A34E64B83C0CEBB641D987D /* MASShortcutValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE890D74FF5505CA2C7D20BDC9D0402A /* MASShortcutValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C5B1682B90C602799A06D0A5FDC68F9 /* MASLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD18341A993AF2033A3FB2D21AA783 /* MASLocalization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3F085DAD796785980C134C9F89C27044 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = BA53FE178C20D7B44CF09D6CE340DB43 /* MASShortcut.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4416502FCC3847A2A4239B44A9624A47 /* MASShortcutMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 71170E4E2771D185598BE05475B68E69 /* MASShortcutMonitor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		45333808B39FACCB4128E10F4B44432B /* Shortcut.h in Headers */ = {isa = PBXBuildFile; fileRef = 7431A6D435BC007D466649E2A7BAC1A9 /* Shortcut.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56B0E92AC0CDAB0AD106E4A16CAA4B1C /* MASShortcutBinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9775F916524923D2392B56450009DFB7 /* MASShortcutBinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C5FEAFEBC103CA46099D2D65EBC47A1 /* MASDictionaryTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED853B9DF49E5C90CCA069BB3F2B43B /* MASDictionaryTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2DB03EAAC500BAE235799DF3CB6E6691 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09914C35D574A97F4E3024930D5D5C2E /* MASShortcutView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		336046A4F3525470D83E016809412B0F /* MASLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF37AF93CB8E1566DE350C338E26ABC /* MASLocalization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		390065C794BEE34014E754C63A77FD4C /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 85689B512BDAA1F67900A9F82B4DB359 /* MASShortcut.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		46DC62E0A8BAECDB4EEF72E2964FA5D1 /* MASDictionaryTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7833BA1F552CFB44698B8D69F10410C6 /* MASDictionaryTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5C556795302FC24EBBEBF4BEA35A83DD /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E1B918B97EF95532214F3EAD27E5EBE1 /* zh-Hant.lproj */; };
 		5D97C99E0453DF81D76D20E2F6515740 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CB16911106539CF98B4AF79FAA2938 /* Cocoa.framework */; };
-		6229CC2D8700E52B2C67C085FF9563D5 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 66963E9C1F04B976EC0D1830456B912C /* ko.lproj */; };
-		67250F0458194534752D26E44041F059 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 605EBDBCA1616C656042B471811F6C71 /* ru.lproj */; };
-		6DFD61F5CE0AFF2AD3918A9719D46F63 /* MASShortcutMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = FC87DC0EA27BB8249F80FAE5FC10020C /* MASShortcutMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F22DF5181A0505E68AB893585556551 /* MASKeyMasks.h in Headers */ = {isa = PBXBuildFile; fileRef = 819F2EB6B7FFAB4121876D2654ACD028 /* MASKeyMasks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		720804F34108B4D8CA6ED208E23391E0 /* MASDictionaryTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2414CC14D6996F009EBA016B98439675 /* MASDictionaryTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A95B39667A492A060986B0795B85122 /* MASShortcutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E469613DEEF5698CC2E0658385B3A7 /* MASShortcutView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EBB0332A57E2BBE2A76884F10E6C7A4 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = AE704AC639A95F6DE8D4094E48684865 /* pl.lproj */; };
+		6100F061295A0BDC25A73E6ADB609260 /* MASHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFAEE248E96C993CF73FDFC492EF3D3 /* MASHotKey.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		65F005A77D8CDCED2F25CB245E856E68 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 83A86ABE6238C4F5A4FC803AA34F8B03 /* es.lproj */; };
+		6BF85742331B8A3474E037C7B8614BF1 /* MASShortcutView+Bindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E9F8EE665F6E820CEC4C0F0C7F6387E /* MASShortcutView+Bindings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		711BEE7CE8EC450BDFABFE91C75A8B11 /* MASKeyMasks.h in Headers */ = {isa = PBXBuildFile; fileRef = 43CC9AE3D46CCD2F6A13F3A70BA07076 /* MASKeyMasks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		729D56C548F75DEEB6018508A1F6C60A /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9FE29AA0CB8FBCFCBEFEAC976DF8A03B /* zh-Hans.lproj */; };
+		7A02F39F3B955D50A0E7299FC13604CA /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 062726AC83BEA9B2A750992056B0B085 /* en.lproj */; };
+		7F5FB298A9C010745D9B68303F9F574C /* MASHotKey.h in Headers */ = {isa = PBXBuildFile; fileRef = D57B7CF9F18235244350CC84F66F1B9D /* MASHotKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81F9789C2D934D9533834FB9153E2061 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 941FA6F01D5BC78824FB54E942BBA63B /* ja.lproj */; };
+		84945D0EF9C992F653ABCBDC25DD6BBE /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 48C4810B0EAE39626D76BE8D7F15902E /* pt.lproj */; };
 		87E1E943697B97013BB895607DAC60F4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CB16911106539CF98B4AF79FAA2938 /* Cocoa.framework */; };
-		88087104DB90EC679F1E367163351FFD /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FD95351169AD17DCD8AE7D859C1D6BC1 /* ja.lproj */; };
+		8AD49EA74E763A4E698F9EC1CCE2B39D /* MASShortcutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A724A2CB6A56673C63E2252DC14031 /* MASShortcutView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B72E67C8E1EF1CBC40EECA90B628B1A /* MASShortcut.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4B7B0816FAB695BF6509A2B22689D1 /* MASShortcut.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C60064F63406A707BF497F1B78F2A48 /* MASShortcutView+Bindings.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F66DC90508A2640EB9F6668C312328 /* MASShortcutView+Bindings.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8CCC8D2AD06BB6174A766EAEE2FC2C4F /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9B3067F7EA190CF04F2BF0D7B26E7308 /* it.lproj */; };
+		8E681E3B60E04BA967FCC027B9C1A4B3 /* MASShortcutValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F77C5CF155EAC26ADB028D9ABC813B /* MASShortcutValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		902EEE23E9D3AA8467EF3A50431EF2BE /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8B3BCAE3930DB03E31F39C1A09E705 /* Carbon.framework */; };
-		96C33D954D43210E97B3DF6444AB94E5 /* MASShortcutValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5C2484673E6954903EEDF333085965 /* MASShortcutValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A358B1CC04588D145AA9D67E26A66AEA /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A9C4628298B582F17383E31ED11A5F08 /* zh-Hant.lproj */; };
-		A5D5DCDE376956279D5B36EA42A24D7D /* MASHotKey.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6E28893186CA3688715CA60BFC32E0 /* MASHotKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCF8876FA78B037CCD4B6BC9246DC6FD /* MASHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A11AB5D416530A484DAD1F97D9E010 /* MASHotKey.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BE1F5449678438070473EA08C4951547 /* MASShortcutView+Bindings.m in Sources */ = {isa = PBXBuildFile; fileRef = FD619B73B50911A58B096529F52A50A7 /* MASShortcutView+Bindings.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		962802C7CBEACC28D3E2759858655608 /* MASKeyCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9039D49A88B17188DC83EBEA7682232E /* MASKeyCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7174933F647159979B2A661A63F4A49 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A27B3791B27E20B87827DCDDAF8B7022 /* fr.lproj */; };
+		A8F99DCDD830218E16B79B95477A0A44 /* MASShortcutMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = A399AEB868417F7B73EC738937EA041A /* MASShortcutMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF3BA9B35F9FFA1B655F9FB4B7E25CA2 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B8ACA087173C4A8C4A4FAA415AD1C /* ko.lproj */; };
+		BCBD927EB9A228DF54C606152C8D7CCB /* MASShortcut-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E91832AD214EE3042996CE08C53F9A /* MASShortcut-dummy.m */; };
 		C322A7288AAD972168AE2C0B75CD059B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5E586EAF4C098BB13472B84B96B96F /* AppKit.framework */; };
-		CA74C6C7D02F9C3FFAA2E3600617F0EF /* MASKeyCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A7023C612FF3F139AE89D62A61C7A13 /* MASKeyCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC55627A7F9AC4EFF8FFE3AE9A73CBEC /* MASLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 6247799F171A0B65576998B4116F1F4E /* MASLocalization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D12DF721C2FBA157157279D77B865C1E /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B4F45EF1CC04352F093E8BF2B47F48B1 /* nl.lproj */; };
-		D6B7130455C1FC500FCFBB4C7B52F8DF /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2404E18B631A74AD670CE1609A7080BF /* en.lproj */; };
-		D7790A18B5A9A073E65E6C35CC4E93C4 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 19DD9FCBCB8B9347A5BE1D983DEE6192 /* de.lproj */; };
-		E450732C1FBD59C7E1C614CC5B0AA249 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E9B40B057B9FEE6019C779F14C5A8 /* MASShortcutView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F0E73BA1E7A419B07EDEDB7670600937 /* MASShortcutView+Bindings.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD57029FEF1D175476848C76ACD611D /* MASShortcutView+Bindings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0FBB86094DE6FFD72E0FA11946335D7 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BC5C51BB4780191957F415BC673514BE /* it.lproj */; };
-		F111E58A8F199C64FAA24329DE9DC5C8 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EFDE7A909E6986B29687C1E0DEFF2C69 /* pl.lproj */; };
-		FEFD6109965996832710EC2D2FE74A26 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 857F9CF0E370084DD45F7EE72F210D08 /* es.lproj */; };
+		C6D54204DCE44821799F803DE5A5788A /* MASShortcutValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D790E15EB53BA127F2713C800510E8B9 /* MASShortcutValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E750BAE47F3423D21D5471646CA3C924 /* MASDictionaryTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = B66083DFBA9B9698B8E2030A4154DCF6 /* MASDictionaryTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA86C227E4EE55E87D482875F6F84E01 /* Shortcut.h in Headers */ = {isa = PBXBuildFile; fileRef = 1990E55349734B64D59A35DB287DC039 /* Shortcut.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2B0B222E0BCFA38B8A861015C84CB31 /* MASShortcutBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBFCFB3AD60345568BB9E4FC9FE843 /* MASShortcutBinder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F91BC5367A321C473FE011A7BA2104D5 /* MASLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFB66A38A941943A2642596488AB832 /* MASLocalization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3E320BF5CDD8E7339F87C6E5801F24 /* MASShortcutBinder.h in Headers */ = {isa = PBXBuildFile; fileRef = D2912CC99967A56EEF38BA7972CF2509 /* MASShortcutBinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE81FCAF4D2F7EC32674061E01B19F0C /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 725EE7ADA9AAB510E2DCF2B6A1A95038 /* nl.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,58 +68,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		038D200C5F73B8EFF0A93DF4E6E1BD90 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fr.lproj; sourceTree = "<group>"; };
+		04E91832AD214EE3042996CE08C53F9A /* MASShortcut-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut-dummy.m"; sourceTree = "<group>"; };
+		062726AC83BEA9B2A750992056B0B085 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
+		09914C35D574A97F4E3024930D5D5C2E /* MASShortcutView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MASShortcutView.m; sourceTree = "<group>"; };
 		0A5E586EAF4C098BB13472B84B96B96F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		0F4B7B0816FAB695BF6509A2B22689D1 /* MASShortcut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASShortcut.h; sourceTree = "<group>"; };
 		12CB16911106539CF98B4AF79FAA2938 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		19DD9FCBCB8B9347A5BE1D983DEE6192 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = de.lproj; sourceTree = "<group>"; };
+		151C638C6DD6AEBC34B74E72221E8D86 /* ResourceBundle-MASShortcut-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MASShortcut-Info.plist"; sourceTree = "<group>"; };
+		1990E55349734B64D59A35DB287DC039 /* Shortcut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Shortcut.h; sourceTree = "<group>"; };
 		20205881F6EE1C3B1AD325F089C33ECE /* Pods-micSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-micSwitch.debug.xcconfig"; sourceTree = "<group>"; };
-		20E469613DEEF5698CC2E0658385B3A7 /* MASShortcutView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcutView.h; path = Framework/MASShortcutView.h; sourceTree = "<group>"; };
 		224DA926409FDF072032448D66AF1260 /* Pods-micSwitch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-micSwitch-acknowledgements.plist"; sourceTree = "<group>"; };
-		2404E18B631A74AD670CE1609A7080BF /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
-		2414CC14D6996F009EBA016B98439675 /* MASDictionaryTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASDictionaryTransformer.h; path = Framework/MASDictionaryTransformer.h; sourceTree = "<group>"; };
-		262F9C963F67BB43B77AEBFCCACE7C2E /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		28DBFCFB3AD60345568BB9E4FC9FE843 /* MASShortcutBinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MASShortcutBinder.m; sourceTree = "<group>"; };
+		2BF37AF93CB8E1566DE350C338E26ABC /* MASLocalization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MASLocalization.m; sourceTree = "<group>"; };
 		2E8B3BCAE3930DB03E31F39C1A09E705 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
-		2EAD18341A993AF2033A3FB2D21AA783 /* MASLocalization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLocalization.m; path = Framework/MASLocalization.m; sourceTree = "<group>"; };
-		36695E6AC45B850D887F4F00D8CE1EE9 /* MASShortcutBinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcutBinder.m; path = Framework/MASShortcutBinder.m; sourceTree = "<group>"; };
+		3BA2A1AF039A4314FA8923ADA0097AEA /* MASShortcutMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MASShortcutMonitor.m; sourceTree = "<group>"; };
 		3C695A31772FF351D911D3265DAA1C58 /* Pods-micSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-micSwitch.release.xcconfig"; sourceTree = "<group>"; };
+		43CC9AE3D46CCD2F6A13F3A70BA07076 /* MASKeyMasks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASKeyMasks.h; sourceTree = "<group>"; };
 		44BFBFD53F889797F8C4CDD571E38CF3 /* Pods-micSwitch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-micSwitch-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4ABF22BA082314E781B0AA36E9E238C4 /* MASShortcut.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MASShortcut.xcconfig; sourceTree = "<group>"; };
-		4EA5D3E1505005EA05EF0615090F48F8 /* MASShortcut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcut.h; path = Framework/MASShortcut.h; sourceTree = "<group>"; };
-		55A11AB5D416530A484DAD1F97D9E010 /* MASHotKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASHotKey.m; path = Framework/MASHotKey.m; sourceTree = "<group>"; };
-		5BAF377C4E8EF2A53E3ACA62B79CD7E7 /* ResourceBundle-MASShortcut-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MASShortcut-Info.plist"; sourceTree = "<group>"; };
-		605EBDBCA1616C656042B471811F6C71 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ru.lproj; sourceTree = "<group>"; };
-		61C518F183F557FD27D9935A683440A5 /* MASShortcut.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MASShortcut.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		6247799F171A0B65576998B4116F1F4E /* MASLocalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLocalization.h; path = Framework/MASLocalization.h; sourceTree = "<group>"; };
-		66963E9C1F04B976EC0D1830456B912C /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ko.lproj; sourceTree = "<group>"; };
-		71170E4E2771D185598BE05475B68E69 /* MASShortcutMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcutMonitor.m; path = Framework/MASShortcutMonitor.m; sourceTree = "<group>"; };
-		7431A6D435BC007D466649E2A7BAC1A9 /* Shortcut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Shortcut.h; path = Framework/Shortcut.h; sourceTree = "<group>"; };
-		819F2EB6B7FFAB4121876D2654ACD028 /* MASKeyMasks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASKeyMasks.h; path = Framework/MASKeyMasks.h; sourceTree = "<group>"; };
-		857F9CF0E370084DD45F7EE72F210D08 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = es.lproj; sourceTree = "<group>"; };
-		8A7023C612FF3F139AE89D62A61C7A13 /* MASKeyCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASKeyCodes.h; path = Framework/MASKeyCodes.h; sourceTree = "<group>"; };
-		8AD57029FEF1D175476848C76ACD611D /* MASShortcutView+Bindings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASShortcutView+Bindings.h"; path = "Framework/MASShortcutView+Bindings.h"; sourceTree = "<group>"; };
-		8C406EEFC562A5DDF90E7181CB08331B /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = cs.lproj; sourceTree = "<group>"; };
-		8ED853B9DF49E5C90CCA069BB3F2B43B /* MASDictionaryTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASDictionaryTransformer.m; path = Framework/MASDictionaryTransformer.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9775F916524923D2392B56450009DFB7 /* MASShortcutBinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcutBinder.h; path = Framework/MASShortcutBinder.h; sourceTree = "<group>"; };
-		9B3E9B40B057B9FEE6019C779F14C5A8 /* MASShortcutView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcutView.m; path = Framework/MASShortcutView.m; sourceTree = "<group>"; };
-		9F2035E0B6B08D4683931B31919D5194 /* MASShortcut-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut-dummy.m"; sourceTree = "<group>"; };
-		A9C4628298B582F17383E31ED11A5F08 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
-		B4F45EF1CC04352F093E8BF2B47F48B1 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = nl.lproj; sourceTree = "<group>"; };
-		BA53FE178C20D7B44CF09D6CE340DB43 /* MASShortcut.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcut.m; path = Framework/MASShortcut.m; sourceTree = "<group>"; };
-		BC5C51BB4780191957F415BC673514BE /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = it.lproj; sourceTree = "<group>"; };
-		BC6E28893186CA3688715CA60BFC32E0 /* MASHotKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASHotKey.h; path = Framework/MASHotKey.h; sourceTree = "<group>"; };
-		BE890D74FF5505CA2C7D20BDC9D0402A /* MASShortcutValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcutValidator.h; path = Framework/MASShortcutValidator.h; sourceTree = "<group>"; };
+		48C4810B0EAE39626D76BE8D7F15902E /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt.lproj; sourceTree = "<group>"; };
+		4F9B8ACA087173C4A8C4A4FAA415AD1C /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ko.lproj; sourceTree = "<group>"; };
+		61C518F183F557FD27D9935A683440A5 /* MASShortcut.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MASShortcut.bundle; path = MASShortcut.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B081DCC009DE00BDE2486113CAAF961 /* MASShortcut.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MASShortcut.xcconfig; sourceTree = "<group>"; };
+		6E9F8EE665F6E820CEC4C0F0C7F6387E /* MASShortcutView+Bindings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASShortcutView+Bindings.h"; sourceTree = "<group>"; };
+		725EE7ADA9AAB510E2DCF2B6A1A95038 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nl.lproj; sourceTree = "<group>"; };
+		76077CCE2252D7E4ADF97C06B5B59FC1 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = de.lproj; sourceTree = "<group>"; };
+		7833BA1F552CFB44698B8D69F10410C6 /* MASDictionaryTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MASDictionaryTransformer.m; sourceTree = "<group>"; };
+		786E4429248DB2ED934505D4C021350E /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = cs.lproj; sourceTree = "<group>"; };
+		7AFB66A38A941943A2642596488AB832 /* MASLocalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASLocalization.h; sourceTree = "<group>"; };
+		82A724A2CB6A56673C63E2252DC14031 /* MASShortcutView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASShortcutView.h; sourceTree = "<group>"; };
+		83A86ABE6238C4F5A4FC803AA34F8B03 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = es.lproj; sourceTree = "<group>"; };
+		85689B512BDAA1F67900A9F82B4DB359 /* MASShortcut.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MASShortcut.m; sourceTree = "<group>"; };
+		9039D49A88B17188DC83EBEA7682232E /* MASKeyCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASKeyCodes.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		941FA6F01D5BC78824FB54E942BBA63B /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ja.lproj; sourceTree = "<group>"; };
+		9B3067F7EA190CF04F2BF0D7B26E7308 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = it.lproj; sourceTree = "<group>"; };
+		9FE29AA0CB8FBCFCBEFEAC976DF8A03B /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		A27B3791B27E20B87827DCDDAF8B7022 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fr.lproj; sourceTree = "<group>"; };
+		A399AEB868417F7B73EC738937EA041A /* MASShortcutMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASShortcutMonitor.h; sourceTree = "<group>"; };
+		AE704AC639A95F6DE8D4094E48684865 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pl.lproj; sourceTree = "<group>"; };
+		B66083DFBA9B9698B8E2030A4154DCF6 /* MASDictionaryTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASDictionaryTransformer.h; sourceTree = "<group>"; };
+		B6F66DC90508A2640EB9F6668C312328 /* MASShortcutView+Bindings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MASShortcutView+Bindings.m"; sourceTree = "<group>"; };
+		BBEA9A2ABDBAC4E8110F23664690ADDF /* MASShortcut-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASShortcut-prefix.pch"; sourceTree = "<group>"; };
 		C4656E1D6B68FABE7D430B5181005CB1 /* Pods-micSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-micSwitch-dummy.m"; sourceTree = "<group>"; };
-		C9A948480CC4094D7FD4DB1934F308DF /* MASShortcut-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASShortcut-prefix.pch"; sourceTree = "<group>"; };
-		CA5C2484673E6954903EEDF333085965 /* MASShortcutValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASShortcutValidator.m; path = Framework/MASShortcutValidator.m; sourceTree = "<group>"; };
-		CE72D3BA2D3AAA7D3356C140714E96E7 /* libMASShortcut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMASShortcut.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE72D3BA2D3AAA7D3356C140714E96E7 /* libMASShortcut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMASShortcut.a; path = libMASShortcut.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0ED96E2522B7A9CF54EE82A735F064 /* Pods-micSwitch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-micSwitch-resources.sh"; sourceTree = "<group>"; };
-		D17F773DB4789D02A66CDF88A8CA5FD3 /* libPods-micSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-micSwitch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17F773DB4789D02A66CDF88A8CA5FD3 /* libPods-micSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-micSwitch.a"; path = "libPods-micSwitch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2912CC99967A56EEF38BA7972CF2509 /* MASShortcutBinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASShortcutBinder.h; sourceTree = "<group>"; };
+		D508BE53DE8B37BF919CF333A6779DB2 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ru.lproj; sourceTree = "<group>"; };
+		D57B7CF9F18235244350CC84F66F1B9D /* MASHotKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASHotKey.h; sourceTree = "<group>"; };
+		D790E15EB53BA127F2713C800510E8B9 /* MASShortcutValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MASShortcutValidator.m; sourceTree = "<group>"; };
+		E1B918B97EF95532214F3EAD27E5EBE1 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
 		E4B1D82F3D5BBC0C806BE8BE008E1218 /* Pods-micSwitch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-micSwitch-frameworks.sh"; sourceTree = "<group>"; };
-		EFDE7A909E6986B29687C1E0DEFF2C69 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pl.lproj; sourceTree = "<group>"; };
-		FC87DC0EA27BB8249F80FAE5FC10020C /* MASShortcutMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASShortcutMonitor.h; path = Framework/MASShortcutMonitor.h; sourceTree = "<group>"; };
-		FD619B73B50911A58B096529F52A50A7 /* MASShortcutView+Bindings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MASShortcutView+Bindings.m"; path = "Framework/MASShortcutView+Bindings.m"; sourceTree = "<group>"; };
-		FD95351169AD17DCD8AE7D859C1D6BC1 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ja.lproj; sourceTree = "<group>"; };
+		EDFAEE248E96C993CF73FDFC492EF3D3 /* MASHotKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MASHotKey.m; sourceTree = "<group>"; };
+		F7F77C5CF155EAC26ADB028D9ABC813B /* MASShortcutValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASShortcutValidator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		33380C163B87D93A1161628042DD0FBF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B081DCC009DE00BDE2486113CAAF961 /* MASShortcut.xcconfig */,
+				04E91832AD214EE3042996CE08C53F9A /* MASShortcut-dummy.m */,
+				BBEA9A2ABDBAC4E8110F23664690ADDF /* MASShortcut-prefix.pch */,
+				151C638C6DD6AEBC34B74E72221E8D86 /* ResourceBundle-MASShortcut-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/MASShortcut";
+			sourceTree = "<group>";
+		};
+		49A798A43BEB52A9A47F7408F0A77503 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A15866A3F38D7068B47657D8A8CE2596 /* MASShortcut */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4FD67972A8F74B7AC62422308C96C34E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				B66083DFBA9B9698B8E2030A4154DCF6 /* MASDictionaryTransformer.h */,
+				7833BA1F552CFB44698B8D69F10410C6 /* MASDictionaryTransformer.m */,
+				D57B7CF9F18235244350CC84F66F1B9D /* MASHotKey.h */,
+				EDFAEE248E96C993CF73FDFC492EF3D3 /* MASHotKey.m */,
+				9039D49A88B17188DC83EBEA7682232E /* MASKeyCodes.h */,
+				43CC9AE3D46CCD2F6A13F3A70BA07076 /* MASKeyMasks.h */,
+				7AFB66A38A941943A2642596488AB832 /* MASLocalization.h */,
+				2BF37AF93CB8E1566DE350C338E26ABC /* MASLocalization.m */,
+				0F4B7B0816FAB695BF6509A2B22689D1 /* MASShortcut.h */,
+				85689B512BDAA1F67900A9F82B4DB359 /* MASShortcut.m */,
+				D2912CC99967A56EEF38BA7972CF2509 /* MASShortcutBinder.h */,
+				28DBFCFB3AD60345568BB9E4FC9FE843 /* MASShortcutBinder.m */,
+				A399AEB868417F7B73EC738937EA041A /* MASShortcutMonitor.h */,
+				3BA2A1AF039A4314FA8923ADA0097AEA /* MASShortcutMonitor.m */,
+				F7F77C5CF155EAC26ADB028D9ABC813B /* MASShortcutValidator.h */,
+				D790E15EB53BA127F2713C800510E8B9 /* MASShortcutValidator.m */,
+				82A724A2CB6A56673C63E2252DC14031 /* MASShortcutView.h */,
+				09914C35D574A97F4E3024930D5D5C2E /* MASShortcutView.m */,
+				6E9F8EE665F6E820CEC4C0F0C7F6387E /* MASShortcutView+Bindings.h */,
+				B6F66DC90508A2640EB9F6668C312328 /* MASShortcutView+Bindings.m */,
+				1990E55349734B64D59A35DB287DC039 /* Shortcut.h */,
+			);
+			name = Framework;
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		71E828FE9FE82679B14421EDD9C435F0 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,43 +225,11 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				49A798A43BEB52A9A47F7408F0A77503 /* Development Pods */,
 				96D996393384F21972E2DD81788EE22C /* Frameworks */,
-				DD0B7A53801E1BE1901C3DF3EFE653E5 /* Pods */,
 				32E3E9E0DBD837BAAFA4AB0D76E651C3 /* Products */,
 				B66AD6996CC7E53643669A1B34F1122C /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		86C7852825D60E928A0CFA79CBCEFD72 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4ABF22BA082314E781B0AA36E9E238C4 /* MASShortcut.xcconfig */,
-				9F2035E0B6B08D4683931B31919D5194 /* MASShortcut-dummy.m */,
-				C9A948480CC4094D7FD4DB1934F308DF /* MASShortcut-prefix.pch */,
-				5BAF377C4E8EF2A53E3ACA62B79CD7E7 /* ResourceBundle-MASShortcut-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MASShortcut";
-			sourceTree = "<group>";
-		};
-		9001976D922754630998DED442D7BE6D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8C406EEFC562A5DDF90E7181CB08331B /* cs.lproj */,
-				19DD9FCBCB8B9347A5BE1D983DEE6192 /* de.lproj */,
-				2404E18B631A74AD670CE1609A7080BF /* en.lproj */,
-				857F9CF0E370084DD45F7EE72F210D08 /* es.lproj */,
-				038D200C5F73B8EFF0A93DF4E6E1BD90 /* fr.lproj */,
-				BC5C51BB4780191957F415BC673514BE /* it.lproj */,
-				FD95351169AD17DCD8AE7D859C1D6BC1 /* ja.lproj */,
-				66963E9C1F04B976EC0D1830456B912C /* ko.lproj */,
-				B4F45EF1CC04352F093E8BF2B47F48B1 /* nl.lproj */,
-				EFDE7A909E6986B29687C1E0DEFF2C69 /* pl.lproj */,
-				605EBDBCA1616C656042B471811F6C71 /* ru.lproj */,
-				262F9C963F67BB43B77AEBFCCACE7C2E /* zh-Hans.lproj */,
-				A9C4628298B582F17383E31ED11A5F08 /* zh-Hant.lproj */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		92541E43FDD878C52113956EDD302A0B /* Pods-micSwitch */ = {
@@ -236,34 +255,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9A4A1752687DE09C8DBF2479B5B1D8F3 /* MASShortcut */ = {
+		A15866A3F38D7068B47657D8A8CE2596 /* MASShortcut */ = {
 			isa = PBXGroup;
 			children = (
-				2414CC14D6996F009EBA016B98439675 /* MASDictionaryTransformer.h */,
-				8ED853B9DF49E5C90CCA069BB3F2B43B /* MASDictionaryTransformer.m */,
-				BC6E28893186CA3688715CA60BFC32E0 /* MASHotKey.h */,
-				55A11AB5D416530A484DAD1F97D9E010 /* MASHotKey.m */,
-				8A7023C612FF3F139AE89D62A61C7A13 /* MASKeyCodes.h */,
-				819F2EB6B7FFAB4121876D2654ACD028 /* MASKeyMasks.h */,
-				6247799F171A0B65576998B4116F1F4E /* MASLocalization.h */,
-				2EAD18341A993AF2033A3FB2D21AA783 /* MASLocalization.m */,
-				4EA5D3E1505005EA05EF0615090F48F8 /* MASShortcut.h */,
-				BA53FE178C20D7B44CF09D6CE340DB43 /* MASShortcut.m */,
-				9775F916524923D2392B56450009DFB7 /* MASShortcutBinder.h */,
-				36695E6AC45B850D887F4F00D8CE1EE9 /* MASShortcutBinder.m */,
-				FC87DC0EA27BB8249F80FAE5FC10020C /* MASShortcutMonitor.h */,
-				71170E4E2771D185598BE05475B68E69 /* MASShortcutMonitor.m */,
-				BE890D74FF5505CA2C7D20BDC9D0402A /* MASShortcutValidator.h */,
-				CA5C2484673E6954903EEDF333085965 /* MASShortcutValidator.m */,
-				20E469613DEEF5698CC2E0658385B3A7 /* MASShortcutView.h */,
-				9B3E9B40B057B9FEE6019C779F14C5A8 /* MASShortcutView.m */,
-				8AD57029FEF1D175476848C76ACD611D /* MASShortcutView+Bindings.h */,
-				FD619B73B50911A58B096529F52A50A7 /* MASShortcutView+Bindings.m */,
-				7431A6D435BC007D466649E2A7BAC1A9 /* Shortcut.h */,
-				9001976D922754630998DED442D7BE6D /* Resources */,
-				86C7852825D60E928A0CFA79CBCEFD72 /* Support Files */,
+				4FD67972A8F74B7AC62422308C96C34E /* Framework */,
+				E3082EDA4EDF6D1B610633D63A561020 /* Resources */,
+				33380C163B87D93A1161628042DD0FBF /* Support Files */,
 			);
-			path = MASShortcut;
+			name = MASShortcut;
+			path = "../Private Pods/MASShortcut";
 			sourceTree = "<group>";
 		};
 		B66AD6996CC7E53643669A1B34F1122C /* Targets Support Files */ = {
@@ -274,33 +274,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		DD0B7A53801E1BE1901C3DF3EFE653E5 /* Pods */ = {
+		E3082EDA4EDF6D1B610633D63A561020 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9A4A1752687DE09C8DBF2479B5B1D8F3 /* MASShortcut */,
+				786E4429248DB2ED934505D4C021350E /* cs.lproj */,
+				76077CCE2252D7E4ADF97C06B5B59FC1 /* de.lproj */,
+				062726AC83BEA9B2A750992056B0B085 /* en.lproj */,
+				83A86ABE6238C4F5A4FC803AA34F8B03 /* es.lproj */,
+				A27B3791B27E20B87827DCDDAF8B7022 /* fr.lproj */,
+				9B3067F7EA190CF04F2BF0D7B26E7308 /* it.lproj */,
+				941FA6F01D5BC78824FB54E942BBA63B /* ja.lproj */,
+				4F9B8ACA087173C4A8C4A4FAA415AD1C /* ko.lproj */,
+				725EE7ADA9AAB510E2DCF2B6A1A95038 /* nl.lproj */,
+				AE704AC639A95F6DE8D4094E48684865 /* pl.lproj */,
+				48C4810B0EAE39626D76BE8D7F15902E /* pt.lproj */,
+				D508BE53DE8B37BF919CF333A6779DB2 /* ru.lproj */,
+				9FE29AA0CB8FBCFCBEFEAC976DF8A03B /* zh-Hans.lproj */,
+				E1B918B97EF95532214F3EAD27E5EBE1 /* zh-Hant.lproj */,
 			);
-			name = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9473DBBEA25053B2575C0714CC0FCF87 /* Headers */ = {
+		FF96F3FB14AFD13EAD1730A3D701FEDA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				720804F34108B4D8CA6ED208E23391E0 /* MASDictionaryTransformer.h in Headers */,
-				A5D5DCDE376956279D5B36EA42A24D7D /* MASHotKey.h in Headers */,
-				CA74C6C7D02F9C3FFAA2E3600617F0EF /* MASKeyCodes.h in Headers */,
-				6F22DF5181A0505E68AB893585556551 /* MASKeyMasks.h in Headers */,
-				CC55627A7F9AC4EFF8FFE3AE9A73CBEC /* MASLocalization.h in Headers */,
-				2BEA82707F6B1289F28D8C8097CF4121 /* MASShortcut.h in Headers */,
-				56B0E92AC0CDAB0AD106E4A16CAA4B1C /* MASShortcutBinder.h in Headers */,
-				6DFD61F5CE0AFF2AD3918A9719D46F63 /* MASShortcutMonitor.h in Headers */,
-				34A3BE024A34E64B83C0CEBB641D987D /* MASShortcutValidator.h in Headers */,
-				F0E73BA1E7A419B07EDEDB7670600937 /* MASShortcutView+Bindings.h in Headers */,
-				7A95B39667A492A060986B0795B85122 /* MASShortcutView.h in Headers */,
-				45333808B39FACCB4128E10F4B44432B /* Shortcut.h in Headers */,
+				E750BAE47F3423D21D5471646CA3C924 /* MASDictionaryTransformer.h in Headers */,
+				7F5FB298A9C010745D9B68303F9F574C /* MASHotKey.h in Headers */,
+				962802C7CBEACC28D3E2759858655608 /* MASKeyCodes.h in Headers */,
+				711BEE7CE8EC450BDFABFE91C75A8B11 /* MASKeyMasks.h in Headers */,
+				F91BC5367A321C473FE011A7BA2104D5 /* MASLocalization.h in Headers */,
+				8B72E67C8E1EF1CBC40EECA90B628B1A /* MASShortcut.h in Headers */,
+				FC3E320BF5CDD8E7339F87C6E5801F24 /* MASShortcutBinder.h in Headers */,
+				A8F99DCDD830218E16B79B95477A0A44 /* MASShortcutMonitor.h in Headers */,
+				8E681E3B60E04BA967FCC027B9C1A4B3 /* MASShortcutValidator.h in Headers */,
+				6BF85742331B8A3474E037C7B8614BF1 /* MASShortcutView+Bindings.h in Headers */,
+				8AD49EA74E763A4E698F9EC1CCE2B39D /* MASShortcutView.h in Headers */,
+				EA86C227E4EE55E87D482875F6F84E01 /* Shortcut.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +326,7 @@
 			buildPhases = (
 				EAF659BC5D7419DEE732EC806EF56C72 /* Sources */,
 				9C297045AF0032DBFB26D4A5B9CD541B /* Frameworks */,
-				B8F7EFE753FA2FA9DA9FA9242878193C /* Resources */,
+				836A0E671E24F6960FC07ACCD5A74D43 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -328,9 +341,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C84B7482B124C24B3A3B284872F1F133 /* Build configuration list for PBXNativeTarget "MASShortcut" */;
 			buildPhases = (
-				21E448A741CC6884D96A953FA9B7F8E0 /* Sources */,
+				A8B0FF50FEA1048F079031232D1D6D66 /* Sources */,
 				941213D2430D297562720C51FB950F5F /* Frameworks */,
-				9473DBBEA25053B2575C0714CC0FCF87 /* Headers */,
+				FF96F3FB14AFD13EAD1730A3D701FEDA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -366,7 +379,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -388,43 +401,44 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B8F7EFE753FA2FA9DA9FA9242878193C /* Resources */ = {
+		836A0E671E24F6960FC07ACCD5A74D43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BFB0520F10AC37A104DF56489C393AD /* cs.lproj in Resources */,
-				D7790A18B5A9A073E65E6C35CC4E93C4 /* de.lproj in Resources */,
-				D6B7130455C1FC500FCFBB4C7B52F8DF /* en.lproj in Resources */,
-				FEFD6109965996832710EC2D2FE74A26 /* es.lproj in Resources */,
-				0E3FE226CE18F169D10196723C37D1D6 /* fr.lproj in Resources */,
-				F0FBB86094DE6FFD72E0FA11946335D7 /* it.lproj in Resources */,
-				88087104DB90EC679F1E367163351FFD /* ja.lproj in Resources */,
-				6229CC2D8700E52B2C67C085FF9563D5 /* ko.lproj in Resources */,
-				D12DF721C2FBA157157279D77B865C1E /* nl.lproj in Resources */,
-				F111E58A8F199C64FAA24329DE9DC5C8 /* pl.lproj in Resources */,
-				67250F0458194534752D26E44041F059 /* ru.lproj in Resources */,
-				2DBA7EDB796E0AF9A189672E9CBA1407 /* zh-Hans.lproj in Resources */,
-				A358B1CC04588D145AA9D67E26A66AEA /* zh-Hant.lproj in Resources */,
+				148CEA208205FE894E79A8110FCEE3EA /* cs.lproj in Resources */,
+				16F26C476213F3ACE8B3C94917FF936B /* de.lproj in Resources */,
+				7A02F39F3B955D50A0E7299FC13604CA /* en.lproj in Resources */,
+				65F005A77D8CDCED2F25CB245E856E68 /* es.lproj in Resources */,
+				A7174933F647159979B2A661A63F4A49 /* fr.lproj in Resources */,
+				8CCC8D2AD06BB6174A766EAEE2FC2C4F /* it.lproj in Resources */,
+				81F9789C2D934D9533834FB9153E2061 /* ja.lproj in Resources */,
+				AF3BA9B35F9FFA1B655F9FB4B7E25CA2 /* ko.lproj in Resources */,
+				FE81FCAF4D2F7EC32674061E01B19F0C /* nl.lproj in Resources */,
+				5EBB0332A57E2BBE2A76884F10E6C7A4 /* pl.lproj in Resources */,
+				84945D0EF9C992F653ABCBDC25DD6BBE /* pt.lproj in Resources */,
+				28278850E653594700A0DBDA16C4920D /* ru.lproj in Resources */,
+				729D56C548F75DEEB6018508A1F6C60A /* zh-Hans.lproj in Resources */,
+				5C556795302FC24EBBEBF4BEA35A83DD /* zh-Hant.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21E448A741CC6884D96A953FA9B7F8E0 /* Sources */ = {
+		A8B0FF50FEA1048F079031232D1D6D66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5FEAFEBC103CA46099D2D65EBC47A1 /* MASDictionaryTransformer.m in Sources */,
-				BCF8876FA78B037CCD4B6BC9246DC6FD /* MASHotKey.m in Sources */,
-				3C5B1682B90C602799A06D0A5FDC68F9 /* MASLocalization.m in Sources */,
-				0E9F71B13EB5B5185C1368803180F2BA /* MASShortcut-dummy.m in Sources */,
-				3F085DAD796785980C134C9F89C27044 /* MASShortcut.m in Sources */,
-				33691F55769BFDF534CD2343841B2B48 /* MASShortcutBinder.m in Sources */,
-				4416502FCC3847A2A4239B44A9624A47 /* MASShortcutMonitor.m in Sources */,
-				96C33D954D43210E97B3DF6444AB94E5 /* MASShortcutValidator.m in Sources */,
-				BE1F5449678438070473EA08C4951547 /* MASShortcutView+Bindings.m in Sources */,
-				E450732C1FBD59C7E1C614CC5B0AA249 /* MASShortcutView.m in Sources */,
+				46DC62E0A8BAECDB4EEF72E2964FA5D1 /* MASDictionaryTransformer.m in Sources */,
+				6100F061295A0BDC25A73E6ADB609260 /* MASHotKey.m in Sources */,
+				336046A4F3525470D83E016809412B0F /* MASLocalization.m in Sources */,
+				BCBD927EB9A228DF54C606152C8D7CCB /* MASShortcut-dummy.m in Sources */,
+				390065C794BEE34014E754C63A77FD4C /* MASShortcut.m in Sources */,
+				F2B0B222E0BCFA38B8A861015C84CB31 /* MASShortcutBinder.m in Sources */,
+				29D3CD326F3D66C7EB34D6CD705D5358 /* MASShortcutMonitor.m in Sources */,
+				C6D54204DCE44821799F803DE5A5788A /* MASShortcutValidator.m in Sources */,
+				8C60064F63406A707BF497F1B78F2A48 /* MASShortcutView+Bindings.m in Sources */,
+				2DB03EAAC500BAE235799DF3CB6E6691 /* MASShortcutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +502,7 @@
 		};
 		350FD80D2C87DE9340198017E154EEF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ABF22BA082314E781B0AA36E9E238C4 /* MASShortcut.xcconfig */;
+			baseConfigurationReference = 6B081DCC009DE00BDE2486113CAAF961 /* MASShortcut.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -546,9 +560,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -556,21 +568,15 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -594,7 +600,7 @@
 		};
 		69FCC9310E5D9B713D47D5E87A19EDB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ABF22BA082314E781B0AA36E9E238C4 /* MASShortcut.xcconfig */;
+			baseConfigurationReference = 6B081DCC009DE00BDE2486113CAAF961 /* MASShortcut.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -627,9 +633,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -637,20 +641,14 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -671,7 +669,7 @@
 		};
 		C953738A4376755FEA05BB8FF29736EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ABF22BA082314E781B0AA36E9E238C4 /* MASShortcut.xcconfig */;
+			baseConfigurationReference = 6B081DCC009DE00BDE2486113CAAF961 /* MASShortcut.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -690,7 +688,7 @@
 		};
 		FE5FC25B90CAF06F692706624247B99B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ABF22BA082314E781B0AA36E9E238C4 /* MASShortcut.xcconfig */;
+			baseConfigurationReference = 6B081DCC009DE00BDE2486113CAAF961 /* MASShortcut.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;

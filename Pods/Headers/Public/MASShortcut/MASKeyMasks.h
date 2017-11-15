@@ -1,1 +1,1 @@
-../../../MASShortcut/Framework/MASKeyMasks.h
+../../../../Private Pods/MASShortcut/Framework/MASKeyMasks.h

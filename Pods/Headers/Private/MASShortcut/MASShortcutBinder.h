@@ -1,1 +1,1 @@
-../../../MASShortcut/Framework/MASShortcutBinder.h
+../../../../Private Pods/MASShortcut/Framework/MASShortcutBinder.h
