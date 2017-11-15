@@ -14,19 +14,19 @@ class PreferencesViewController: NSViewController {
     }
     
     @IBOutlet weak var shortcutView: MASShortcutView!
+    @IBOutlet weak var walkieTalkieMode: NSButton!
     @IBOutlet weak var launchAtLogin: NSButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         shortcutView.associatedUserDefaultsKey = Preferences.preferenceMuteShortcut
+        walkieTalkieMode.state = Preferences.walkieTalkieMode ? .on : .off
         launchAtLogin.state = Preferences.launchAtLogin ? .on : .off
     }
     
-    override func viewDidAppear() {
-        super.viewDidAppear()
-        
-        view.window?.level = .floating
+    @IBAction func walkieTalkieModeChanged(_ sender: Any) {
+        Preferences.walkieTalkieMode = walkieTalkieMode.state == .on
     }
     
     @IBAction func launchAtLoginChanged(_ sender: Any) {

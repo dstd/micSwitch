@@ -26,9 +26,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             self?.updateMicStatus()
         }
         
-        MASShortcutBinder.shared().bindShortcut(withDefaultsKey: Preferences.preferenceMuteShortcut) {
-            Audio.toggleMicMute()
-        }
+        MASShortcutBinder.shared().bindShortcut(
+            withDefaultsKey: Preferences.preferenceMuteShortcut,
+            toAction: {
+                if Preferences.walkieTalkieMode {
+                    Audio.micMuted = false
+                } else {
+                    Audio.toggleMicMute()
+                }
+            },
+            onKeyUp: {
+                if Preferences.walkieTalkieMode {
+                    Audio.micMuted = true
+                }
+            })
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

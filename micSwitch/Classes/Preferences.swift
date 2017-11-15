@@ -10,6 +10,11 @@ import Foundation
 import ServiceManagement
 
 class Preferences {
+    static var walkieTalkieMode: Bool {
+        get { return UserDefaults.standard.bool(forKey: Preferences.preferenceWalkieTalkieMode) }
+        set { UserDefaults.standard.set(newValue, forKey: Preferences.preferenceWalkieTalkieMode) }
+    }
+    
     static var launchAtLogin: Bool {
         get {
             guard let jobs = (SMCopyAllJobDictionaries(kSMDomainUserLaunchd).takeRetainedValue() as? [[String: AnyObject]])
@@ -26,5 +31,6 @@ class Preferences {
     }
     
     static let preferenceMuteShortcut = "muteShortcut"
+    static let preferenceWalkieTalkieMode = "walkieTalkieMode"
     static let laucherBundleId = "dstd.github.com.micSwitch.Launcher"
 }
