@@ -14,11 +14,13 @@ class PreferencesViewController: NSViewController {
     }
     
     @IBOutlet weak var shortcutView: MASShortcutView!
+    @IBOutlet weak var launchAtLogin: NSButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         shortcutView.associatedUserDefaultsKey = Preferences.preferenceMuteShortcut
+        launchAtLogin.state = Preferences.launchAtLogin ? .on : .off
     }
     
     override func viewDidAppear() {
@@ -27,6 +29,9 @@ class PreferencesViewController: NSViewController {
         view.window?.level = .floating
     }
     
+    @IBAction func launchAtLoginChanged(_ sender: Any) {
+        Preferences.launchAtLogin = launchAtLogin.state == .on
+    }
     @IBAction func quit(_ sender: Any) {
         NSApp.terminate(self)
     }
