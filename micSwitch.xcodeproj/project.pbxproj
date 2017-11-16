@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0998F1E8923C40945F1B849C /* libPods-micSwitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95EEC8846D47357E0C76A671 /* libPods-micSwitch.a */; };
+		7C724B8B1FBE2B36009762CE /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C724B8D1FBE2B36009762CE /* Preferences.xib */; };
+		7C724B921FBE36A0009762CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C724B941FBE36A0009762CE /* InfoPlist.strings */; };
+		7C724B971FBE36A0009762CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C724B991FBE36A0009762CE /* InfoPlist.strings */; };
 		7C78BD651FBBB40300735F37 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78BD641FBBB40300735F37 /* PreferencesViewController.swift */; };
 		7C78BD6D1FBBBA7700735F37 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78BD6C1FBBBA7700735F37 /* Preferences.swift */; };
 		7C78BD771FBC50E700735F37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78BD761FBC50E700735F37 /* AppDelegate.swift */; };
@@ -15,7 +18,6 @@
 		7C78BD7C1FBC50E700735F37 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C78BD7A1FBC50E700735F37 /* MainMenu.xib */; };
 		7C78BD881FBC562600735F37 /* Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C78BD741FBC50E700735F37 /* Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7C78BD8A1FBC569D00735F37 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78BD891FBC568800735F37 /* ServiceManagement.framework */; };
-		7C9E7FFD1FBCD1D400F93CB1 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E7FFB1FBCD1D400F93CB1 /* Preferences.xib */; };
 		7CC187EB1FB9A63D0015D41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */; };
 		7CC187ED1FB9A63D0015D41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EC1FB9A63D0015D41D /* Assets.xcassets */; };
 		7CC187F01FB9A63D0015D41D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EE1FB9A63D0015D41D /* MainMenu.xib */; };
@@ -37,6 +39,12 @@
 
 /* Begin PBXFileReference section */
 		18F2C411820865C3AAD30DAE /* Pods-micSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-micSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch.release.xcconfig"; sourceTree = "<group>"; };
+		7C724B891FBDECC6009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		7C724B8A1FBDECC6009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		7C724B8C1FBE2B36009762CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
+		7C724B8F1FBE2B56009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Preferences.strings; sourceTree = "<group>"; };
+		7C724B931FBE36A0009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C724B981FBE36A0009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C78BD641FBBB40300735F37 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		7C78BD661FBBB6AD00735F37 /* micSwitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "micSwitch-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C78BD6C1FBBBA7700735F37 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
@@ -47,7 +55,6 @@
 		7C78BD7D1FBC50E700735F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C78BD7E1FBC50E700735F37 /* Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Launcher.entitlements; sourceTree = "<group>"; };
 		7C78BD891FBC568800735F37 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
-		7C9E7FFB1FBCD1D400F93CB1 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		7CC187E71FB9A63D0015D41D /* micSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = micSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC187EC1FB9A63D0015D41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +98,7 @@
 		7C78BD751FBC50E700735F37 /* Launcher */ = {
 			isa = PBXGroup;
 			children = (
+				7C724B941FBE36A0009762CE /* InfoPlist.strings */,
 				7C78BD761FBC50E700735F37 /* AppDelegate.swift */,
 				7C78BD781FBC50E700735F37 /* Assets.xcassets */,
 				7C78BD7D1FBC50E700735F37 /* Info.plist */,
@@ -104,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				7CC187EE1FB9A63D0015D41D /* MainMenu.xib */,
-				7C9E7FFB1FBCD1D400F93CB1 /* Preferences.xib */,
+				7C724B8D1FBE2B36009762CE /* Preferences.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 		7C78BD861FBC558000735F37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7C724B991FBE36A0009762CE /* InfoPlist.strings */,
 				7CC187F21FB9A63D0015D41D /* micSwitch.entitlements */,
 				7CC187F11FB9A63D0015D41D /* Info.plist */,
 				7C78BD661FBBB6AD00735F37 /* micSwitch-Bridging-Header.h */,
@@ -247,6 +256,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 7CC187DE1FB9A63D0015D41D;
 			productRefGroup = 7CC187E81FB9A63D0015D41D /* Products */;
@@ -265,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C78BD791FBC50E700735F37 /* Assets.xcassets in Resources */,
+				7C724B921FBE36A0009762CE /* InfoPlist.strings in Resources */,
 				7C78BD7C1FBC50E700735F37 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CC187ED1FB9A63D0015D41D /* Assets.xcassets in Resources */,
-				7C9E7FFD1FBCD1D400F93CB1 /* Preferences.xib in Resources */,
+				7C724B971FBE36A0009762CE /* InfoPlist.strings in Resources */,
+				7C724B8B1FBE2B36009762CE /* Preferences.xib in Resources */,
 				7CC187F01FB9A63D0015D41D /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,10 +364,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		7C724B8D1FBE2B36009762CE /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C724B8C1FBE2B36009762CE /* Base */,
+				7C724B8F1FBE2B56009762CE /* ru */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+		7C724B941FBE36A0009762CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C724B931FBE36A0009762CE /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7C724B991FBE36A0009762CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C724B981FBE36A0009762CE /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		7C78BD7A1FBC50E700735F37 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7C78BD7B1FBC50E700735F37 /* Base */,
+				7C724B8A1FBDECC6009762CE /* ru */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -364,6 +402,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7CC187EF1FB9A63D0015D41D /* Base */,
+				7C724B891FBDECC6009762CE /* ru */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -413,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -470,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

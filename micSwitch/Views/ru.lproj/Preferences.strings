@@ -1,0 +1,12 @@
+/* Class = "NSButtonCell"; title = "Quit micSwitch"; ObjectID = "GNY-wp-WQ0"; */
+"GNY-wp-WQ0.title" = "Завершить micSwitch";
+
+/* Class = "NSButtonCell"; title = "Walkie-talkie mode"; ObjectID = "M44-Xp-CFN"; */
+"M44-Xp-CFN.title" = "Режим рации";
+
+/* Class = "NSTextFieldCell"; title = "Mic mute shortcut:"; ObjectID = "UbL-zi-3DQ"; */
+"UbL-zi-3DQ.title" = "Сочетание клавиш\nвыключения микрофона:";
+
+/* Class = "NSButtonCell"; title = "Launch at login"; ObjectID = "lXX-Br-Gg3"; */
+"lXX-Br-Gg3.title" = "Запуск при старте системы";
+
