@@ -1,5 +1,10 @@
 # micSwitch
-macOS menu bar application for the mic mute/unmute with single click or shortcut with walkie-talkie style support
+macOS menu bar application for the mic mute/unmute
+
+- mute/unmute with single click on menu bar icon
+- right click to show the preferences
+- shortcut for mute/unmute
+- walkie-talkie mode – mic will be active only while shortcut is pressed
 
 ![micSwitch.png](micSwitch.png)
 
