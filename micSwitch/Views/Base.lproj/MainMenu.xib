@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -12,33 +12,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="micSwitch" customModuleProvider="target">
-            <connections>
-                <outlet property="mutedStateItem" destination="wC9-mf-n7L" id="Tvf-77-smw"/>
-                <outlet property="statusMenu" destination="AYE-OB-fBt" id="UNB-Em-dkz"/>
-            </connections>
-        </customObject>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="micSwitch" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <menu id="AYE-OB-fBt" userLabel="Status Menu">
-            <items>
-                <menuItem title="Mic is Muted" id="wC9-mf-n7L">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Preferences…" hidden="YES" id="fP4-k7-BRU">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="showPreferences:" target="Voe-Tx-rLC" id="JsG-bG-NMB"/>
-                    </connections>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" hidden="YES" id="SCp-SI-6Wf"/>
-                <menuItem title="Quit" hidden="YES" id="Uar-B1-SvA">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="terminate:" target="-3" id="4ZJ-Sw-Cij"/>
-                    </connections>
-                </menuItem>
-            </items>
-            <point key="canvasLocation" x="-39" y="22"/>
-        </menu>
     </objects>
 </document>

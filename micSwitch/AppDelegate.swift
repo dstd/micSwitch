@@ -10,9 +10,6 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    @IBOutlet weak var statusMenu: NSMenu!
-    @IBOutlet weak var mutedStateItem: NSMenuItem!
-    
     var preferences: PreferencesViewController?
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -46,7 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         Audio.removeMicMuteListener(listenerId: muteListenerId)
     }
 
-    @IBAction func showPreferences(_ sender: Any) {
+    func showPreferences() {
         let preferences = self.preferences ?? PreferencesViewController.newInstance()
         self.preferences = preferences
         
@@ -68,7 +65,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         guard let event = NSApp.currentEvent else { return }
         switch event.type {
         case NSEvent.EventType.rightMouseUp:
-            showPreferences(self)
+            showPreferences()
         default:
             Audio.toggleMicMute()
         }
