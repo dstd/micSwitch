@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		0998F1E8923C40945F1B849C /* libPods-micSwitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95EEC8846D47357E0C76A671 /* libPods-micSwitch.a */; };
 		7C724B8B1FBE2B36009762CE /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C724B8D1FBE2B36009762CE /* Preferences.xib */; };
-		7C724B921FBE36A0009762CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C724B941FBE36A0009762CE /* InfoPlist.strings */; };
 		7C724B971FBE36A0009762CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C724B991FBE36A0009762CE /* InfoPlist.strings */; };
+		7C724BA21FBE4433009762CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C724BA11FBE4433009762CE /* AppDelegate.m */; };
+		7C724BA41FBE4433009762CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C724BA31FBE4433009762CE /* Assets.xcassets */; };
+		7C724BA71FBE4433009762CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C724BA51FBE4433009762CE /* MainMenu.xib */; };
+		7C724BAA1FBE4433009762CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C724BA91FBE4433009762CE /* main.m */; };
+		7C724BAF1FBE4597009762CE /* Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C724B9E1FBE4433009762CE /* Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7C78BD651FBBB40300735F37 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78BD641FBBB40300735F37 /* PreferencesViewController.swift */; };
 		7C78BD6D1FBBBA7700735F37 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78BD6C1FBBBA7700735F37 /* Preferences.swift */; };
-		7C78BD771FBC50E700735F37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78BD761FBC50E700735F37 /* AppDelegate.swift */; };
-		7C78BD791FBC50E700735F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C78BD781FBC50E700735F37 /* Assets.xcassets */; };
-		7C78BD7C1FBC50E700735F37 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C78BD7A1FBC50E700735F37 /* MainMenu.xib */; };
-		7C78BD881FBC562600735F37 /* Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C78BD741FBC50E700735F37 /* Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7C78BD8A1FBC569D00735F37 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78BD891FBC568800735F37 /* ServiceManagement.framework */; };
 		7CC187EB1FB9A63D0015D41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */; };
 		7CC187ED1FB9A63D0015D41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EC1FB9A63D0015D41D /* Assets.xcassets */; };
@@ -31,7 +31,7 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				7C78BD881FBC562600735F37 /* Launcher.app in CopyFiles */,
+				7C724BAF1FBE4597009762CE /* Launcher.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,20 +40,20 @@
 /* Begin PBXFileReference section */
 		18F2C411820865C3AAD30DAE /* Pods-micSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-micSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch.release.xcconfig"; sourceTree = "<group>"; };
 		7C724B891FBDECC6009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		7C724B8A1FBDECC6009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		7C724B8C1FBE2B36009762CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
 		7C724B8F1FBE2B56009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Preferences.strings; sourceTree = "<group>"; };
-		7C724B931FBE36A0009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C724B981FBE36A0009762CE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C724B9E1FBE4433009762CE /* Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Launcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C724BA01FBE4433009762CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7C724BA11FBE4433009762CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7C724BA31FBE4433009762CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C724BA61FBE4433009762CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7C724BA81FBE4433009762CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C724BA91FBE4433009762CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C724BAB1FBE4433009762CE /* Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Launcher.entitlements; sourceTree = "<group>"; };
 		7C78BD641FBBB40300735F37 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		7C78BD661FBBB6AD00735F37 /* micSwitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "micSwitch-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C78BD6C1FBBBA7700735F37 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
-		7C78BD741FBC50E700735F37 /* Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Launcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C78BD761FBC50E700735F37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C78BD781FBC50E700735F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C78BD7B1FBC50E700735F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		7C78BD7D1FBC50E700735F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C78BD7E1FBC50E700735F37 /* Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Launcher.entitlements; sourceTree = "<group>"; };
 		7C78BD891FBC568800735F37 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		7CC187E71FB9A63D0015D41D /* micSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = micSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC187EA1FB9A63D0015D41D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7C78BD711FBC50E600735F37 /* Frameworks */ = {
+		7C724B9B1FBE4433009762CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,15 +95,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7C78BD751FBC50E700735F37 /* Launcher */ = {
+		7C724B9F1FBE4433009762CE /* Launcher */ = {
 			isa = PBXGroup;
 			children = (
-				7C724B941FBE36A0009762CE /* InfoPlist.strings */,
-				7C78BD761FBC50E700735F37 /* AppDelegate.swift */,
-				7C78BD781FBC50E700735F37 /* Assets.xcassets */,
-				7C78BD7D1FBC50E700735F37 /* Info.plist */,
-				7C78BD7A1FBC50E700735F37 /* MainMenu.xib */,
-				7C78BD7E1FBC50E700735F37 /* Launcher.entitlements */,
+				7C724BA01FBE4433009762CE /* AppDelegate.h */,
+				7C724BA11FBE4433009762CE /* AppDelegate.m */,
+				7C724BA31FBE4433009762CE /* Assets.xcassets */,
+				7C724BA51FBE4433009762CE /* MainMenu.xib */,
+				7C724BA81FBE4433009762CE /* Info.plist */,
+				7C724BA91FBE4433009762CE /* main.m */,
+				7C724BAB1FBE4433009762CE /* Launcher.entitlements */,
 			);
 			path = Launcher;
 			sourceTree = "<group>";
@@ -149,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				7CC187E91FB9A63D0015D41D /* micSwitch */,
-				7C78BD751FBC50E700735F37 /* Launcher */,
+				7C724B9F1FBE4433009762CE /* Launcher */,
 				7CC187E81FB9A63D0015D41D /* Products */,
 				493B02A16B208425F81C1AA5 /* Pods */,
 				CC7DF16E3BF4F2D7794D84F5 /* Frameworks */,
@@ -160,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				7CC187E71FB9A63D0015D41D /* micSwitch.app */,
-				7C78BD741FBC50E700735F37 /* Launcher.app */,
+				7C724B9E1FBE4433009762CE /* Launcher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,13 +191,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C78BD731FBC50E600735F37 /* Launcher */ = {
+		7C724B9D1FBE4433009762CE /* Launcher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C78BD7F1FBC50E700735F37 /* Build configuration list for PBXNativeTarget "Launcher" */;
+			buildConfigurationList = 7C724BAC1FBE4433009762CE /* Build configuration list for PBXNativeTarget "Launcher" */;
 			buildPhases = (
-				7C78BD701FBC50E600735F37 /* Sources */,
-				7C78BD711FBC50E600735F37 /* Frameworks */,
-				7C78BD721FBC50E600735F37 /* Resources */,
+				7C724B9A1FBE4433009762CE /* Sources */,
+				7C724B9B1FBE4433009762CE /* Frameworks */,
+				7C724B9C1FBE4433009762CE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -204,7 +205,7 @@
 			);
 			name = Launcher;
 			productName = Launcher;
-			productReference = 7C78BD741FBC50E700735F37 /* Launcher.app */;
+			productReference = 7C724B9E1FBE4433009762CE /* Launcher.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7CC187E61FB9A63D0015D41D /* micSwitch */ = {
@@ -238,8 +239,8 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Denis Stanishevskiy";
 				TargetAttributes = {
-					7C78BD731FBC50E600735F37 = {
-						CreatedOnToolsVersion = 9.0.1;
+					7C724B9D1FBE4433009762CE = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 					7CC187E61FB9A63D0015D41D = {
@@ -264,19 +265,18 @@
 			projectRoot = "";
 			targets = (
 				7CC187E61FB9A63D0015D41D /* micSwitch */,
-				7C78BD731FBC50E600735F37 /* Launcher */,
+				7C724B9D1FBE4433009762CE /* Launcher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7C78BD721FBC50E600735F37 /* Resources */ = {
+		7C724B9C1FBE4433009762CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C78BD791FBC50E700735F37 /* Assets.xcassets in Resources */,
-				7C724B921FBE36A0009762CE /* InfoPlist.strings in Resources */,
-				7C78BD7C1FBC50E700735F37 /* MainMenu.xib in Resources */,
+				7C724BA41FBE4433009762CE /* Assets.xcassets in Resources */,
+				7C724BA71FBE4433009762CE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,11 +342,12 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7C78BD701FBC50E600735F37 /* Sources */ = {
+		7C724B9A1FBE4433009762CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C78BD771FBC50E700735F37 /* AppDelegate.swift in Sources */,
+				7C724BAA1FBE4433009762CE /* main.m in Sources */,
+				7C724BA21FBE4433009762CE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,14 +374,6 @@
 			name = Preferences.xib;
 			sourceTree = "<group>";
 		};
-		7C724B941FBE36A0009762CE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C724B931FBE36A0009762CE /* ru */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		7C724B991FBE36A0009762CE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -389,11 +382,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7C78BD7A1FBC50E700735F37 /* MainMenu.xib */ = {
+		7C724BA51FBE4433009762CE /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7C78BD7B1FBC50E700735F37 /* Base */,
-				7C724B8A1FBDECC6009762CE /* ru */,
+				7C724BA61FBE4433009762CE /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -410,7 +402,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7C78BD801FBC50E700735F37 /* Debug */ = {
+		7C724BAD1FBE4433009762CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -425,11 +417,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dstd.github.com.micSwitch.Launcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		7C78BD811FBC50E700735F37 /* Release */ = {
+		7C724BAE1FBE4433009762CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -444,7 +435,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dstd.github.com.micSwitch.Launcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -606,11 +596,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C78BD7F1FBC50E700735F37 /* Build configuration list for PBXNativeTarget "Launcher" */ = {
+		7C724BAC1FBE4433009762CE /* Build configuration list for PBXNativeTarget "Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C78BD801FBC50E700735F37 /* Debug */,
-				7C78BD811FBC50E700735F37 /* Release */,
+				7C724BAD1FBE4433009762CE /* Debug */,
+				7C724BAE1FBE4433009762CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
