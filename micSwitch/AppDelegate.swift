@@ -10,8 +10,6 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    var preferences: PreferencesViewController?
-    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if let statusButton = statusItem.button {
             statusButton.target = self
@@ -43,7 +41,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         Audio.removeMicMuteListener(listenerId: muteListenerId)
     }
 
-    func showPreferences() {
+    @objc func statusItemClicked(_ sender: Any?) {
+        guard let event = NSApp.currentEvent else { return }
+        switch event.type {
+        case NSEvent.EventType.rightMouseUp:
+            showPreferences()
+        default:
+            Audio.toggleMicMute()
+        }
+    }
+
+    private func showPreferences() {
         let preferences = self.preferences ?? PreferencesViewController.newInstance()
         self.preferences = preferences
         
@@ -60,17 +68,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         guard let button = statusItem.button else { return }
         button.image = NSImage(named: NSImage.Name(Audio.micMuted ? "micOff" : "micOn"))
     }
-    
-    @objc func statusItemClicked(_ sender: Any?) {
-        guard let event = NSApp.currentEvent else { return }
-        switch event.type {
-        case NSEvent.EventType.rightMouseUp:
-            showPreferences()
-        default:
-            Audio.toggleMicMute()
-        }
-    }
-    
+
+    private var preferences: PreferencesViewController?
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private var muteListenerId: Int = -1
 }
