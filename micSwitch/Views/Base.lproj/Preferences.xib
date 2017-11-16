@@ -22,7 +22,7 @@
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7hh-aa-Y5Q">
                     <rect key="frame" x="14" y="151" width="126" height="18"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Mic mute shortcut:" id="UbL-zi-3DQ">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mic mute shortcut:" id="UbL-zi-3DQ">
                         <font key="font" metaFont="menuBar"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -37,7 +37,7 @@
                 </customView>
                 <button focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="E6I-d4-8kN">
                     <rect key="frame" x="14" y="96" width="146" height="18"/>
-                    <buttonCell key="cell" type="check" title="Walkie-talkie mode" bezelStyle="regularSquare" imagePosition="left" state="on" focusRingType="none" inset="2" id="M44-Xp-CFN">
+                    <buttonCell key="cell" type="check" title="Walkie-talkie mode" bezelStyle="regularSquare" imagePosition="left" scrollable="YES" lineBreakMode="clipping" state="on" focusRingType="none" inset="2" id="M44-Xp-CFN">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="menuBar"/>
                     </buttonCell>
@@ -50,7 +50,7 @@
                 </box>
                 <button focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="PG6-Z9-td4">
                     <rect key="frame" x="14" y="49" width="121" height="18"/>
-                    <buttonCell key="cell" type="check" title="Launch at login" bezelStyle="regularSquare" imagePosition="left" state="on" focusRingType="none" inset="2" id="lXX-Br-Gg3">
+                    <buttonCell key="cell" type="check" title="Launch at login" bezelStyle="regularSquare" imagePosition="left" scrollable="YES" lineBreakMode="clipping" state="on" focusRingType="none" inset="2" id="lXX-Br-Gg3">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="menuBar"/>
                     </buttonCell>
