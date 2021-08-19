@@ -24,6 +24,11 @@ struct AudioObjectAddress {
         mSelector: kAudioDevicePropertyDeviceNameCFString,
         mScope: kAudioObjectPropertyScopeGlobal,
         mElement: kAudioObjectPropertyElementMaster)
+
+    static var isRunning = AudioObjectPropertyAddress(
+        mSelector: kAudioDevicePropertyDeviceIsRunningSomewhere,
+        mScope: kAudioObjectPropertyScopeGlobal,
+        mElement: kAudioObjectPropertyElementMaster)
 }
 
 class Audio {
@@ -62,6 +67,20 @@ class Audio {
                 0, nil,
                 muteStateSize, &muteState)
         }
+    }
+
+    var isRunning: Bool {
+        guard let inputDevice = inputDevice else { return false }
+
+        var value: UInt32 = 0
+        var size = UInt32(MemoryLayout.size(ofValue: value))
+
+        let error = AudioObjectGetPropertyData(
+            inputDevice, &AudioObjectAddress.isRunning,
+            0, nil,
+            &size, &value)
+
+        return error == kAudioHardwareNoError ? value == 1 : false
     }
 
     func toggleMicMute() {
@@ -114,12 +133,14 @@ class Audio {
     private func registerDeviceStateListener() {
         guard let inputDevice = self.inputDevice else { return }
         AudioObjectAddPropertyListenerBlock(inputDevice, &AudioObjectAddress.muteState, DispatchQueue.main, self.deviceStateListener)
+        AudioObjectAddPropertyListenerBlock(inputDevice, &AudioObjectAddress.isRunning, DispatchQueue.main, self.deviceStateListener)
 
         listeners.forEach { $0.value() }
     }
 
     private func unregisterDeviceStateListener() {
         guard let inputDevice = self.inputDevice else { return }
+        AudioObjectRemovePropertyListenerBlock(inputDevice, &AudioObjectAddress.isRunning, DispatchQueue.main, self.deviceStateListener)
         AudioObjectRemovePropertyListenerBlock(inputDevice, &AudioObjectAddress.muteState, DispatchQueue.main, self.deviceStateListener)
     }
 
