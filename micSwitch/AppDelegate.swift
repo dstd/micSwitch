@@ -16,11 +16,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusButton.action = #selector(statusItemClicked(_:))
             statusButton.sendAction(on: [NSEvent.EventTypeMask.leftMouseUp, NSEvent.EventTypeMask.rightMouseUp])
         }
+
+        Audio.initialize()
         
         muteListenerId = Audio.addMicMuteListener { [weak self] in
             self?.updateMicStatus()
         }
-        
+
         MASShortcutBinder.shared().bindShortcut(
             withDefaultsKey: Preferences.preferenceMuteShortcut,
             toAction: {

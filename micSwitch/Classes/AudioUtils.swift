@@ -22,7 +22,7 @@ struct AudioObjectAddress {
 }
 
 struct Audio {
-    static var inputDevice: AudioDeviceID? {
+    private static func getInputDevice() -> AudioDeviceID? {
         var deviceId = kAudioObjectUnknown
         var deviceIdSize = UInt32(MemoryLayout.size(ofValue: deviceId))
         
@@ -34,6 +34,8 @@ struct Audio {
         
         return error == kAudioHardwareNoError && deviceId != kAudioObjectUnknown ? deviceId : nil
     }
+
+    static var inputDevice: AudioDeviceID? = Self.getInputDevice()
 
     static var micMuted: Bool {
         get {
@@ -66,11 +68,12 @@ struct Audio {
     static func toggleMicMute() {
         micMuted = !micMuted
     }
-    
+
     static func addMicMuteListener(listener: @escaping () -> ()) -> Int {
         guard let inputDevice = inputDevice else { return -1 }
         
         let block: AudioObjectPropertyListenerBlock = { (addressesCount, addresses) in
+            Log.print { "#mic mute state changed" }
             listener()
         }
         
@@ -92,7 +95,45 @@ struct Audio {
         
         AudioObjectRemovePropertyListenerBlock(inputDevice, &AudioObjectAddress.muteState, DispatchQueue.main, block)
     }
-    
+
+    static func initialize() {
+        Self.addDefaultMicListener()
+    }
+
+    private static func addDefaultMicListener() {
+        let status = AudioObjectAddPropertyListenerBlock(AudioObjectID(kAudioObjectSystemObject), &AudioObjectAddress.inputDevice, DispatchQueue.main, Self.defaultMicListener)
+        Log.print { "#mic added listener to \(inputDevice ?? 11111111) = \(status)" }
+    }
+
+    private static func removeDefaultMicListener() {
+        AudioObjectRemovePropertyListenerBlock(AudioObjectID(kAudioObjectSystemObject), &AudioObjectAddress.inputDevice, DispatchQueue.main, Self.defaultMicListener)
+    }
+
+    private static func updateMicListeners() {
+        let listeners = Self.listeners
+
+        if let inputDevice = Self.inputDevice {
+            listeners.forEach {
+                AudioObjectRemovePropertyListenerBlock(inputDevice, &AudioObjectAddress.muteState, DispatchQueue.main, $0.value)
+            }
+            Self.listeners = [:]
+        }
+
+        Self.inputDevice = Self.getInputDevice()
+        guard let inputDevice = Self.inputDevice else { return Log.print { "#mic changed to nil" } }
+
+        listeners.forEach {
+            let status = AudioObjectAddPropertyListenerBlock(inputDevice, &AudioObjectAddress.muteState, DispatchQueue.main, $0.value)
+            $0.value(1, &AudioObjectAddress.muteState)
+            Log.print { "#mic changed to \(inputDevice) = \(status)" }
+        }
+        Self.listeners = listeners
+    }
+
+    private static var defaultMicListener: AudioObjectPropertyListenerBlock = { (addressesCount, addresses) in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { Self.updateMicListeners() }
+    }
+
     private static var listeners = [Int: AudioObjectPropertyListenerBlock]()
     private static var nextListenerId: Int = 0
 }
