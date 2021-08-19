@@ -26,7 +26,10 @@ class PreferencesViewController: NSViewController {
         shortcutView.associatedUserDefaultsKey = Preferences.preferenceMuteShortcut
         walkieTalkieMode.state = Preferences.walkieTalkieMode ? .on : .off
         launchAtLogin.state = Preferences.launchAtLogin ? .on : .off
+    }
 
+    override func viewWillAppear() {
+        super.viewWillAppear()
         muteListenerId = Audio.shared.addDeviceStateListener { [weak self] in
             self?.inputDeviceName.stringValue = Audio.shared.inputDeviceName ?? "—"
         }
