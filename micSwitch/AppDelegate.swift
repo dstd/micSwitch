@@ -17,9 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusButton.sendAction(on: [NSEvent.EventTypeMask.leftMouseUp, NSEvent.EventTypeMask.rightMouseUp])
         }
 
-        Audio.initialize()
-        
-        muteListenerId = Audio.addMicMuteListener { [weak self] in
+        muteListenerId = Audio.shared.addMicMuteListener { [weak self] in
             self?.updateMicStatus()
         }
 
@@ -27,20 +25,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             withDefaultsKey: Preferences.preferenceMuteShortcut,
             toAction: {
                 if Preferences.walkieTalkieMode {
-                    Audio.micMuted = false
+                    Audio.shared.micMuted = false
                 } else {
-                    Audio.toggleMicMute()
+                    Audio.shared.toggleMicMute()
                 }
             },
             onKeyUp: {
                 if Preferences.walkieTalkieMode {
-                    Audio.micMuted = true
+                    Audio.shared.micMuted = true
                 }
             })
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        Audio.removeMicMuteListener(listenerId: muteListenerId)
+        Audio.shared.removeMicMuteListener(listenerId: muteListenerId)
     }
 
     @objc func statusItemClicked(_ sender: Any?) {
@@ -49,7 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         case NSEvent.EventType.rightMouseUp:
             showPreferences()
         default:
-            Audio.toggleMicMute()
+            Audio.shared.toggleMicMute()
         }
     }
 
@@ -68,7 +66,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func updateMicStatus() {
         guard let button = statusItem.button else { return }
-        button.image = NSImage(named: NSImage.Name(Audio.micMuted ? "micOff" : "micOn"))
+        button.image = NSImage(named: NSImage.Name(Audio.shared.micMuted ? "micOff" : "micOn"))
     }
 
     private var preferences: PreferencesViewController?
