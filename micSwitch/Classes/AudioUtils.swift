@@ -19,12 +19,21 @@ struct AudioObjectAddress {
         mSelector: kAudioDevicePropertyMute,
         mScope: kAudioDevicePropertyScopeInput,
         mElement: kAudioObjectPropertyElementMaster)
+
+    static var deviceName = AudioObjectPropertyAddress(
+        mSelector: kAudioDevicePropertyDeviceNameCFString,
+        mScope: kAudioObjectPropertyScopeGlobal,
+        mElement: kAudioObjectPropertyElementMaster)
 }
 
 class Audio {
     static let shared = Audio()
 
     var inputDevice: AudioDeviceID?
+    var inputDeviceName: String? {
+        guard let deviceId = inputDevice else { return nil }
+        return Self.nameOfDevice(id: deviceId)
+    }
 
     var micMuted: Bool {
         get {
@@ -53,7 +62,7 @@ class Audio {
                 muteStateSize, &muteState)
         }
     }
-    
+
     func toggleMicMute() {
         micMuted = !micMuted
     }
@@ -98,6 +107,19 @@ class Audio {
         return error == kAudioHardwareNoError && deviceId != kAudioObjectUnknown ? deviceId : nil
     }
 
+    private static func nameOfDevice(id deviceId: AudioDeviceID) -> String? {
+        var name = "" as CFString
+        var nameSize = UInt32(MemoryLayout.size(ofValue: name))
+
+        let error = AudioObjectGetPropertyData(
+            deviceId,
+            &AudioObjectAddress.deviceName,
+            0, nil,
+            &nameSize, &name)
+
+        return error == kAudioHardwareNoError ? name as String : nil
+    }
+
     private func addDefaultMicListener() {
         let status = AudioObjectAddPropertyListenerBlock(AudioObjectID(kAudioObjectSystemObject), &AudioObjectAddress.inputDevice, DispatchQueue.main, defaultMicListener)
         Log.print { "#mic added listener to \(inputDevice ?? 11111111) = \(status)" }
@@ -122,8 +144,8 @@ class Audio {
 
         listeners.forEach {
             let status = AudioObjectAddPropertyListenerBlock(inputDevice, &AudioObjectAddress.muteState, DispatchQueue.main, $0.value)
-            $0.value(1, &AudioObjectAddress.muteState)
             Log.print { "#mic changed to \(inputDevice) = \(status)" }
+            $0.value(1, &AudioObjectAddress.muteState)
         }
         self.listeners = listeners
     }

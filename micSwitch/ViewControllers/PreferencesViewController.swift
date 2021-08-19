@@ -13,18 +13,30 @@ class PreferencesViewController: NSViewController {
         return PreferencesViewController(nibName: NSNib.Name(rawValue: "Preferences"), bundle: nil)
     }
     
-    @IBOutlet weak var shortcutView: MASShortcutView!
-    @IBOutlet weak var walkieTalkieMode: NSButton!
-    @IBOutlet weak var launchAtLogin: NSButton!
-    
+    @IBOutlet var inputDeviceName: NSTextField!
+    @IBOutlet var shortcutView: MASShortcutView!
+    @IBOutlet var walkieTalkieMode: NSButton!
+    @IBOutlet var launchAtLogin: NSButton!
+
+    private var muteListenerId: Int = -1
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         shortcutView.associatedUserDefaultsKey = Preferences.preferenceMuteShortcut
         walkieTalkieMode.state = Preferences.walkieTalkieMode ? .on : .off
         launchAtLogin.state = Preferences.launchAtLogin ? .on : .off
+
+        muteListenerId = Audio.shared.addMicMuteListener { [weak self] in
+            self?.inputDeviceName.stringValue = Audio.shared.inputDeviceName ?? "—"
+        }
     }
-    
+
+    override func viewWillDisappear() {
+        super.viewWillDisappear()
+        Audio.shared.removeMicMuteListener(listenerId: muteListenerId)
+    }
+
     @IBAction func walkieTalkieModeChanged(_ sender: Any) {
         Preferences.walkieTalkieMode = walkieTalkieMode.state == .on
     }
