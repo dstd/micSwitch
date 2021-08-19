@@ -23,6 +23,7 @@
 		7CC187F01FB9A63D0015D41D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC187EE1FB9A63D0015D41D /* MainMenu.xib */; };
 		7CC187F91FB9B7230015D41D /* AudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC187F81FB9B7230015D41D /* AudioUtils.swift */; };
 		7CF3898126CEA10600DE2528 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3898026CEA10600DE2528 /* Log.swift */; };
+		7CF3898526CF196D00DE2528 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3898426CF196D00DE2528 /* Image+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,7 @@
 		7CC187F21FB9A63D0015D41D /* micSwitch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = micSwitch.entitlements; sourceTree = "<group>"; };
 		7CC187F81FB9B7230015D41D /* AudioUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtils.swift; sourceTree = "<group>"; };
 		7CF3898026CEA10600DE2528 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		7CF3898426CF196D00DE2528 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		95EEC8846D47357E0C76A671 /* libPods-micSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-micSwitch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02C8B4A3456F2904B757385 /* Pods-micSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-micSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-micSwitch/Pods-micSwitch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 				7C78BD6C1FBBBA7700735F37 /* Preferences.swift */,
 				7CC187F81FB9B7230015D41D /* AudioUtils.swift */,
 				7CF3898026CEA10600DE2528 /* Log.swift */,
+				7CF3898426CF196D00DE2528 /* Image+Extensions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				7CC187EB1FB9A63D0015D41D /* AppDelegate.swift in Sources */,
 				7C78BD6D1FBBBA7700735F37 /* Preferences.swift in Sources */,
 				7CF3898126CEA10600DE2528 /* Log.swift in Sources */,
+				7CF3898526CF196D00DE2528 /* Image+Extensions.swift in Sources */,
 				7CC187F91FB9B7230015D41D /* AudioUtils.swift in Sources */,
 				7C78BD651FBBB40300735F37 /* PreferencesViewController.swift in Sources */,
 			);

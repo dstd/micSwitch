@@ -66,9 +66,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func updateMicStatus() {
         guard let button = statusItem.button else { return }
-        button.image = NSImage(named: NSImage.Name(Audio.shared.micMuted ? "micOff" : "micOn"))
+        button.image = Audio.shared.micMuted ? micOff : micOn
     }
 
+    private let micOn = NSImage(named: NSImage.Name("micOn"))
+    private let micOff = NSImage(named: NSImage.Name("micOff"))?.tint(color: NSColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5))
     private var preferences: PreferencesViewController?
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private var muteListenerId: Int = -1
