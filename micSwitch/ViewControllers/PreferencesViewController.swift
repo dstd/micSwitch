@@ -27,14 +27,14 @@ class PreferencesViewController: NSViewController {
         walkieTalkieMode.state = Preferences.walkieTalkieMode ? .on : .off
         launchAtLogin.state = Preferences.launchAtLogin ? .on : .off
 
-        muteListenerId = Audio.shared.addMicMuteListener { [weak self] in
+        muteListenerId = Audio.shared.addDeviceStateListener { [weak self] in
             self?.inputDeviceName.stringValue = Audio.shared.inputDeviceName ?? "—"
         }
     }
 
     override func viewWillDisappear() {
         super.viewWillDisappear()
-        Audio.shared.removeMicMuteListener(listenerId: muteListenerId)
+        Audio.shared.removeDeviceStateListener(listenerId: muteListenerId)
     }
 
     @IBAction func walkieTalkieModeChanged(_ sender: Any) {

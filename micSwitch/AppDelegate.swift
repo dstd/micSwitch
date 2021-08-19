@@ -17,7 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusButton.sendAction(on: [NSEvent.EventTypeMask.leftMouseUp, NSEvent.EventTypeMask.rightMouseUp])
         }
 
-        muteListenerId = Audio.shared.addMicMuteListener { [weak self] in
+        muteListenerId = Audio.shared.addDeviceStateListener { [weak self] in
             self?.updateMicStatus()
         }
 
@@ -38,7 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        Audio.shared.removeMicMuteListener(listenerId: muteListenerId)
+        Audio.shared.removeDeviceStateListener(listenerId: muteListenerId)
     }
 
     @objc func statusItemClicked(_ sender: Any?) {
