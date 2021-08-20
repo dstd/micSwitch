@@ -66,7 +66,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func updateMicStatus() {
         guard let button = statusItem.button else { return }
-        switch Audio.shared.micMuted, Audio.shared.isRunning) {
+        switch (Audio.shared.micMuted, Audio.shared.isRunning) {
         case (true, false): button.image = micOff
         case (true, true): button.image = micOffActive
         case (false, false): button.image = micOn
