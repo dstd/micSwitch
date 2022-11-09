@@ -1,6 +1,7 @@
 # micSwitch
 macOS menu bar application for the mic mute/unmute
 
+- icon colors: **grey** – disabled mic; **white** – enabled mic; **red** – audio is being capturing
 - mute/unmute with single click on menu bar icon
 - right click to show the preferences
 - shortcut for mute/unmute
